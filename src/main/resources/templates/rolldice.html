@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Rolling Some Dice</title>
+    <th:block th:include="partials/styles"></th:block>
+</head>
+<body>
+<th:block th:inlcude="partials/navbar.html" :: navbar></th:block>
+
+<div th:if="${roll}">
+    <h3>Result #1: <span th:text="${roll}"> here</span></h3>
+    <h3>Result #2: <span th:text="${rollTwo}"> here</span></h3>
+    <h3>Result #3: <span th:text="${rollThree}"> here</span></h3>
+
+    <h3>Your guess <span th:text="${guess}">Guess goes here</span></h3>
+    <h3 th:if="${rollsCorrect}">Correct</h3>
+    <h3 th:if="!${rollsCorrect}">Incorrect</h3>
+    <h3>play again?</h3>
+</div>
+
+<div class="container">
+    <a class="btn btn-dark m-3" href="/roll-dice/1">Guess 1?</a>
+    <br>
+    <a class="btn btn-dark m-3" href="/roll-dice/2">Guess 2?</a>
+    <br>
+    <a class="btn btn-dark m-3" href="/roll-dice/3">Guess 3?</a>
+    <br>
+    <a class="btn btn-dark m-3" href="/roll-dice/4">Guess 4?</a>
+    <br>
+    <a class="btn btn-dark m-3" href="/roll-dice/5">Guess 5?</a>
+    <br>
+    <a class="btn btn-dark m-3" href="/roll-dice/6">Guess 6?</a>
+    <br>
+</div>
+
+<th:block th:include="partials/scripts.html :: bootstrap"></th:block>
+</body>
+</html>
