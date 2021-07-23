@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Rolling Some Dice</title>
-    <th:block th:include="partials/styles"></th:block>
+<!--    <th:block th:include="partials/styles"></th:block>-->
 </head>
 <body>
-<th:block th:inlcude="partials/navbar.html" :: navbar></th:block>
+<!--<th:block th:inlcude="partials/navbar.html" :: navbar></th:block>-->
 
 <div th:if="${roll}">
     <h3>Result #1: <span th:text="${roll}"> here</span></h3>
@@ -34,6 +34,6 @@
     <br>
 </div>
 
-<th:block th:include="partials/scripts.html :: bootstrap"></th:block>
+<!--<th:block th:include="partials/scripts.html :: bootstrap"></th:block>-->
 </body>
 </html>
