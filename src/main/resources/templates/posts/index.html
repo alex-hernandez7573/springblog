@@ -5,6 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-
+<div th:each="posts : ${allPosts}">
+    <h1 th:text="${}"></h1>
+</div>
 </body>
 </html>

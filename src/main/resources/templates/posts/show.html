@@ -5,6 +5,9 @@
     <title>Title</title>
 </head>
 <body>
+<h3 th:text="${post.title}"></h3>
+<p th:text="${post.body}" ></p>
 
+<div th:replace="partials/scripts :: scripts"></div>
 </body>
 </html>
