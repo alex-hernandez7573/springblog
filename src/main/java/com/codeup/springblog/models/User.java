@@ -21,7 +21,7 @@ public class User {
     private List<Post> posts;
 
 
-    public User() {
+    public User(User user) {
     }
 
     public User(long id, String username, String email, String password) {
